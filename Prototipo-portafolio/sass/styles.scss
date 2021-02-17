@@ -1,0 +1,22 @@
+/*-NORMALIZE-*/
+@import "library/normalize";
+/*-VARIABLES-*/
+@import "configurations/variables";
+/*-GLOBALS-*/
+@import "partials/globals";
+/*-HELPERS-*/
+@import "partials/helpers";
+/*-FUNCTIONS-*/
+@import "partials/functions";
+/*-HEADER-*/
+@import "partials/header";
+/*-MAIN CONTENT-*/
+@import "partials/mainContentHome";
+@import "partials/mainContentAboutMe";
+@import "partials/mainContentPortfolio";
+@import "partials/mainContentActivity";
+@import "partials/mainContentContact";
+/*-FOOTER-*/
+@import "partials/footer";
+/*-MEDIA QUERIES-*/
+@import "partials/tablet";

@@ -1,0 +1,74 @@
+.banner-2 {
+    max-width: 100%;
+    margin-bottom: 80px;
+    position:relative;
+}
+
+.second-banner p {
+    font-size: 2rem;
+    color:$white;
+    padding: 16px 16px 16px 90px;
+    background-color: #DB841E;
+    position:absolute;
+    top:125px;
+}
+.main-content-contact p {
+    color: $darkGreen;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-left: 30%;
+}
+.query-form label {
+    color:$black;
+    font-size: 1.2rem;
+    display: block;
+    margin: 20px 0;
+}
+
+.query-form input {
+    border: 2px solid $turquoise;
+    background-color: $turquoise;
+    opacity: 70%;
+    display: block;
+    margin-right: 0;
+    padding: 20px 35%;
+    border-radius: 5px;
+}
+
+.query-form input:focus {
+    background-color: $white;
+}
+
+.query-form textarea {
+    border: 2px solid $turquoise;
+    background-color: $turquoise;
+    opacity: 70%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.query-form textarea:focus {
+    background-color: $white;
+}
+
+.submit {
+    color: $white;
+    margin-top: 10px;
+    margin-left: 40%;
+    margin-bottom: 100px;
+    padding: 10px 15%;
+    background-color: #DB841E;
+    border-radius: 5px;
+    border: 0;
+}
+
+.submit:hover {
+    color:$darkGreen;
+    background-color:$white;
+    border: 1px solid $darkGreen;
+}
+
+.submit:focus {
+    outline: none;
+}

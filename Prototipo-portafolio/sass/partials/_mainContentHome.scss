@@ -1,0 +1,45 @@
+.banner-1 {
+    max-width: 100%;
+    margin-bottom: 100px;
+    position:relative;
+}
+
+.nav-link-menu {
+    display: none;
+}
+.principal-banner p {
+    font-size: 2rem;
+    color:$white;
+    padding: 16px 16px 16px 90px;
+    background-color: #DB841E;
+    position:absolute;
+    top:125px;
+}
+.title-bomba{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.paragraph-bomba {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 70px;
+    margin-bottom: 60px;
+}
+
+.goodbye {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 100px;
+}
+
+.main-content-home span {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.main-content-home  strong {
+    color:$darkGreen;
+}
