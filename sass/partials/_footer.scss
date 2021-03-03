@@ -4,28 +4,25 @@
     position: relative;
     padding: 20px 0;
 }
-.footer-copyrigth {
-    font-size: 1rem;
-    color:$white;
-    /*margin-top:15px;*/
-    p {
-        margin-bottom: -45px;
-    }
+.footer-info {
+    text-align: center;
 }
 
-.logo-footer-2 {
-    width: 60px;
-    height: 60px;
-    margin-left: 50%;
-    margin-bottom: -15px;
-}
-.e-mail {
+.footer-info a {
     color: $white;
     font-size: 1rem;
     text-decoration: none;
-    float: right;
-    position: absolute;
-    bottom:30px;
-    left: 78%;
-
+    display: block;
+    padding-bottom: 5px;
 }
+
+.footer-info img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+}
+.footer-info p{
+    font-size: 1rem;
+    color:$white;
+}
+

@@ -8,7 +8,7 @@
     font-size: 2rem;
     color:$white;
     padding: 16px 16px 16px 90px;
-    background-color: #DB841E;
+    background-color: $turquoise;
     position:absolute;
     top:125px;
 }
@@ -27,8 +27,7 @@
 }
 
 .query-form input {
-    border: 2px solid $turquoise;
-    background-color: $turquoise;
+    border: 3px solid $darkGreen;
     opacity: 70%;
     display: block;
     margin-right: 0;
@@ -41,8 +40,7 @@
 }
 
 .query-form textarea {
-    border: 2px solid $turquoise;
-    background-color: $turquoise;
+    border: 3px solid $darkGreen;
     opacity: 70%;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -58,7 +56,7 @@
     margin-left: 40%;
     margin-bottom: 100px;
     padding: 10px 15%;
-    background-color: #DB841E;
+    background-color: $turquoise;
     border-radius: 5px;
     border: 0;
 }

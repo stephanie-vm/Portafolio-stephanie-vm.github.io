@@ -3,7 +3,8 @@
     margin-left: 15%;
     margin-bottom: 100px;
     border-radius: 5px;
-    width: 25%;
+    max-width: 100%;
+    width: 300px;
     height: 500px;
 }
 .personal-phrase {
@@ -20,7 +21,7 @@
 }
 
 .main-content-aboutMe  strong {
-    color:$orange;
+    color: $turquoise;
     font-weight: bold;
 }
 
