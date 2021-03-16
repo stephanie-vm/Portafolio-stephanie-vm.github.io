@@ -8,6 +8,10 @@
         text-decoration: none;
     }
 }
+.js-list-repos a:hover{
+    text-decoration: underline;
+    color: $darkGreen;
+}
 .main-content-activity h1 {
     padding-top: 20px;
     margin-left: 10%;

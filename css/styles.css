@@ -451,7 +451,6 @@ h1 {
 
 .img-creative {
   width: 30%;
-  height: 300px;
   float: left;
   margin-top: 100px;
   margin-left: 15%; }
@@ -484,6 +483,9 @@ h1 {
   float: right;
   margin-right: 12%; }
 
+.link-project:hover {
+  color: #217887; }
+
 .js-list-repos {
   text-align: center;
   list-style: none;
@@ -492,6 +494,10 @@ h1 {
   .js-list-repos a {
     color: #000;
     text-decoration: none; }
+
+.js-list-repos a:hover {
+  text-decoration: underline;
+  color: #536F30; }
 
 .main-content-activity h1 {
   padding-top: 20px;
@@ -539,7 +545,8 @@ h1 {
   border: 3px solid #536F30;
   opacity: 70%;
   border-radius: 5px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  resize: none; }
 
 .query-form textarea:focus {
   background-color: #ffff; }
@@ -587,16 +594,3 @@ h1 {
 .footer-info p {
   font-size: 1rem;
   color: #ffff; }
-
-/*-MEDIA QUERIES-*/
-@media (max-width: 767px) {
-  .nav-list {
-    display: none; }
-  .nav-link-menu {
-    margin-left: 50%;
-    padding-top: 30px;
-    display: block; }
-  .logo {
-    margin: 6px 5%; }
-  .principal-banner p {
-    top: 100px; } }

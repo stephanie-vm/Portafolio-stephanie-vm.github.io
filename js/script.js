@@ -9,9 +9,9 @@ fetch(urlGit)
         list.appendChild(listItem);
         list.classList.add('js-list-repos');
         const content = `
-            <a href='#'>${data[i].name}</a>`
+            <a href='${data[i].html_url}'>${data[i].name}</a>`
         listItem.innerHTML = content;
     }
 });
-
+console.log(urlGit);
 
