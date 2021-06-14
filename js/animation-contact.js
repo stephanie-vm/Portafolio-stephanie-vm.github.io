@@ -1,21 +1,19 @@
 function init() {
-        const canvas = document.getElementById('canvas');
+    const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
-
     const image = new Image();
     let imgWidth;
     let  imgHeight;
     image.src = 'img/tucan.jpg'; 
     image.classList.add('banner-2');
-    // image.add.className('banner-1');
     const xWidth = canvas.width;
     const yHeight = canvas.height;
     const scale = 1.05;
     const yPosition = -4.5;
-    const distanceX = 0.75;
+    const xDistance = 0.75;
     let xPosition = 0;
-    let resetX;
-    let resetY; 
+    let xReset;
+    let yReset; 
     //Ésta función controla la ejecución de los métodos del objeto 
     function controls() {
         const imagePrincipal = new objectImage(image, imgWidth, imgHeight);
@@ -23,7 +21,6 @@ function init() {
         imagePrincipal.draw();
         window.requestAnimationFrame(controls);
     }
-    window.requestAnimationFrame(controls); 
     //Se crea una clase para el objeto de imagen, con las propiedades
     //de la instancia, en este caso la única imagen 
     class objectImage {
@@ -43,20 +40,20 @@ function init() {
                     xPosition = xWidth - imgWidth;
                 }
                 if (imgWidth > xWidth) {
-                    resetX = imgWidth;
+                    xReset = imgWidth;
                 } else {
-                    resetX = xWidth;
+                    xReset = xWidth;
                 }
                 if (imgHeight > yHeight) {
-                    resetY = imgHeight;
+                    yReset = imgHeight;
                 } else {
-                    resetY = yHeight;
+                    yReset = yHeight;
                 }
             }
         }
         //Éste método crea la imagen
         draw() {
-            ctx.clearRect(0, 0, resetX, resetY); 
+            ctx.clearRect(0, 0, xReset, yReset); 
             
             if (imgWidth <= xWidth) {
                 if (xPosition > xWidth) {
@@ -78,8 +75,9 @@ function init() {
                 }
             }
             ctx.drawImage(image, xPosition, yPosition,imgWidth, imgHeight);
-            xPosition += distanceX;
+            xPosition += xDistance;
         }    
     }
+    window.requestAnimationFrame(controls); 
 }
 init();
