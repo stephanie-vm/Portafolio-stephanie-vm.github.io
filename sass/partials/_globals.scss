@@ -1,25 +1,7 @@
 html {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
 }
-.wrapper {
-    width:1024px;
-    margin: 0 auto;
+body {
+    background-color: $bgColor;
 }
 
-.wrapper-form {
-    width: 300px;
-    margin: 0 auto;
-}
-
-.main-content-portfolio p {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    border: 2px solid $orange;
-    border-radius: 5px;
-    padding: 20px 15px;
-}
-
-.main-content-portfolio a {
-    color: $darkGreen;
-}
