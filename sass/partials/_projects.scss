@@ -1,0 +1,39 @@
+.projects {
+    background-color: $primaryColor;
+    padding: 2rem 0;
+    margin: 5rem 0;
+}
+.principal-cards {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between; 
+}
+
+.project-card {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border:0.313rem solid $baseColor;
+    h3, p, a {
+        padding: 0.5rem 1rem;
+        margin: 0;
+    }
+    a {
+        font-size: 1rem;
+        color: $baseColor;
+        text-align: right;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+    }
+    @media (min-width:40rem){
+        width: 40%;
+    }
+    @media (min-width:60rem){
+        width: 20%;
+    }
+}

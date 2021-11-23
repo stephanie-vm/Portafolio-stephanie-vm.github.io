@@ -1,4 +1,36 @@
+.welcome {
+    margin:0 0 5rem 0;
+}
 .header {
     background-color: $primaryColor;
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem;
+}
+
+.welcome__banner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    img { 
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+    }
+    @media (min-width:40rem){
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        gap: 8rem;
+    }
+    @media (min-width:60rem){
+        h1 {
+            font-size: 8rem;
+            font-family: 'Parisienne', cursive;
+            font-weight: 300;
+        }
+    }
 }

@@ -1,0 +1,47 @@
+.personal {
+    background-color: $SecondaryColor;
+}
+.personal-info {
+    margin: 5rem 0;
+    padding: 2rem 0;
+    @media (min-width:60rem){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.personal-image {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 11rem;
+    text-align: center;
+    img {
+        width: 100%;
+        @media (min-width:40rem){
+            width: 50%;
+        }
+        @media (min-width:60rem){
+            width: 80%;
+        }
+    }
+    @media (min-width:60rem){
+        width: 30%;
+    }
+}
+.personal-bio {
+    width: 90%;
+    margin: 0 auto;
+    padding-right: 8rem;
+    p {
+        padding: 1rem;
+        line-height: 1.7rem;
+        @media (min-width:40rem){
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+    @media (min-width:40rem){
+        width: 50%;
+    }
+}

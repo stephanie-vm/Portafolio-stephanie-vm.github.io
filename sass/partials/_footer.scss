@@ -1,4 +1,7 @@
 .footer {
     background-color: $primaryColor;
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem;
 }
