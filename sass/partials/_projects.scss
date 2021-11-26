@@ -1,10 +1,17 @@
 .projects {
     background-color: $primaryColor;
     padding: 2rem 0;
-    margin: 5rem 0;
+    margin: 5rem 0 7.5rem 0;
+    
+    @media (min-width:60rem){
+        h2 {
+            font-size: 3rem;
+        }
+    }
 }
 .principal-cards {
     align-items: center;
+    padding-bottom:7.5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,6 +29,9 @@
         padding: 0.5rem 1rem;
         margin: 0;
     }
+    p {
+        line-height: 1.7rem;
+    }
     a {
         font-size: 1rem;
         color: $baseColor;
@@ -32,6 +42,16 @@
     }
     @media (min-width:40rem){
         width: 40%;
+        h3 {
+            font-size: 1.7rem;
+        }
+        p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        a {
+            font-size: 1.5rem;
+        }
     }
     @media (min-width:60rem){
         width: 20%;

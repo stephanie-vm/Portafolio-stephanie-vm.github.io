@@ -1,13 +1,101 @@
 .welcome {
     margin:0 0 5rem 0;
+    background-color: $primaryColor;
 }
 .header {
+    padding: 1.7rem;
+    img {
+        margin: 20px 0 0 50px;
+    }
+}
+header {
+    padding: 1.7rem;
+    width: 100%;
+    height: 10vh;
+    padding: 0;
+}
+nav {
     background-color: $primaryColor;
+    height: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1.7rem;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
 }
 
+.bar-btn {
+    font-size: 2.5rem;
+    color: $baseColor;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0,0,0, .95);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 3rem;
+    margin: 50px 0;
+    transition: all .5s;
+    list-style: none;
+}
+
+.nav-menu li a {
+    color: $baseColor;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: #d73d6c;
+    transition: .3s;
+}
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+@media(min-width:60rem) {
+    nav {
+        height: 100px;
+    }
+    .bar-btn {
+        display: none;
+    }
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        margin-right: 5rem;
+        top: 0;
+        background: none;
+        text-align: right;
+        li {
+            display: inline-block;
+            line-height: 100px;
+            margin: 0 2rem;
+            transition: none;
+        }
+    }
+}
+//BANNER
 .welcome__banner {
     width: 90%;
     margin: 0 auto;
@@ -17,6 +105,10 @@
     }
     h1 {
         text-align: center;
+        font-family: 'Parisienne', cursive;
+        font-weight: 300;
+        font-size: 3rem;
+        margin-top: 4rem;
     }
     @media (min-width:40rem){
         width: 50%;
@@ -29,8 +121,6 @@
     @media (min-width:60rem){
         h1 {
             font-size: 8rem;
-            font-family: 'Parisienne', cursive;
-            font-weight: 300;
         }
     }
 }

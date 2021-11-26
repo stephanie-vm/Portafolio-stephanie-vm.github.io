@@ -3,8 +3,20 @@
     flex-direction: column;
     justify-content: space-between; 
     gap: 2rem;
+    margin: 3.75rem;
+
     @media (min-width:40rem){
         flex-direction: row;
+        margin-left: 3.75rem;
+        h2 {
+            font-size: 3rem;
+        }
+    }
+    ul {
+        list-style: none;
+        li {
+            display: flex;
+        }
     }
 }
 
@@ -12,6 +24,7 @@
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 4.875rem;
     img {
         width: 100%;
         @media (min-width:40rem){
@@ -24,10 +37,24 @@
 }
 .contact-info {
     width: 90%;
-    @media (min-width:40rem){
-        width: 50%;
-        h2 {
-            text-align: left;
+    background-color: $SecondaryColor;
+    margin: 0 auto;
+    margin-bottom: 3.75rem;
+    h2 {
+        text-align: left;
+    }
+    li {
+        img {
+            margin-right: 0.438rem;
         }
+    }
+    @media (min-width:40rem){
+        width: 80%;
+        li {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+        height: 24rem;;
     }
 }

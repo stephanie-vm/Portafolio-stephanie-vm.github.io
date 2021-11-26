@@ -13,21 +13,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Parisienne&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/390b530c29.js" crossorigin="anonymous"></script>
 </head> 
 <body>
     <!--Primer contenido superior del portafolio-->
-    <div class="welcome">
-        <div class="header">
-            <div class="logo">
-                <img src="../Portafolio-stephanie-vm.github.io/img/logo.svg" alt="stephanie vega">
-            </div>
-            <div class="welcome__btn">
-                <button>
-                    <img src="../Portafolio-stephanie-vm.github.io//img/menu.svg">
-                </button>
-            </div>
-        </div>
-        <div class="welcome__banner">
+    <div class="welcome" >
+        <header>
+            <nav>
+                <div class="header">
+                    <a href="#home">
+                        <img src="../Portafolio-stephanie-vm.github.io/img/logo.svg" alt="stephanie vega">
+                    </a>
+                </div>
+                <input type="checkbox" id="check">
+                <label for="check" class="bar-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav-menu">
+                    <li><a class="active" href="#home">Inicio</a></li>
+                    <li><a href="#personal">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto" >Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="welcome__banner" id="home">
             <img src="../Portafolio-stephanie-vm.github.io/img/img-banner.svg" alt="">
             <h1>¡Bienvenido!</h1>
         </div>
@@ -35,72 +45,73 @@
     
     <div class="wrapper">
     <!--Acá empieza mi info personal, foto y biografía-->
-        <div class="personal">
-            <h2>Sobre mi</h2>
+        <div class="personal" id="personal">
+            <h2 id="sobre-mi">Hola! Soy Steph</h2>
             <div class="personal-info">
                 <div class="personal-image">
-                    <img src="../Portafolio-stephanie-vm.github.io//img/personalPhoto.jpg" alt="">
+                    <img src="../Portafolio-stephanie-vm.github.io//img/personalPhoto (4).jpg" alt="">
                 </div>
                 <div class="personal-bio">
                     <p>
-                        Soy una chica MenTe egresada de la novena edición, fue en esta gran familia donde
-                        Descubrí mi gusto por la tecnología y la gran capacidad que tienen las mujeres en este ámbito.
-                        Actualmente soy diseñador y desarrollador web, tengo conocimientos en diseño de UI, usuario de UX
-                        análisis de experiencias, y en diseño web utilizando los 3 pilares básicos html, css y javaScript y conocimiento del preprocesador sass. Me gusta trabajar en equipo y poder compartir
+                        Soy una chica <b><a href="http://www.ideasenaccion.com/mente-en-accion-2/" target="_blank" class="mente">MenTe</a></b> egresada de la novena edición, fue en esta gran familia donde
+                        descubrí mi gusto por la tecnología y la gran capacidad que tenemos las mujeres en esta área.
+                        Actualmente soy diseñadora y desarrolladora web, tengo conocimientos en  <b>UI, UX</b>
+                        y en desarrollo web utilizando los 3 pilares básicos <b>html, css y javaScript</b> y conocimiento del preprocesador <b>sass</b>. Me gusta <b>trabajar en equipo</b> y poder compartir
                         ideas con otras personas para lograr la mejor solución.
                         Amo la naturaleza y Costa Rica, en mi tiempo libre escribo retahílas con el propósito de no
-                        perdiendo esta valiosa tradición, amo a los animales y sobre todo ayudo a los demás, cuando ayudamos
+                        perder esta valiosa tradición, amo a los animales y sobre todo ayudar a los demás, cuando ayudamos
                         personas, sean conocidas o no, estamos cambiando la vida de alguien
                         independientemente de su situación, origen, empleo, etc ...
-                        Siempre digo: "El mundo no puede cambiar mi sonrisa, pero mi sonrisa puede cambiar el mundo".
+                        Siempre digo: <b>"El mundo no puede cambiar mi sonrisa, pero mi sonrisa puede cambiar el mundo".</b>
                     </p>
                 </div>
             </div>
         </div>
     <!--Acá empiezan mis proyectos-->
-        <div class="projects">
-            <h2>Proyectos</h2>
+        <div class="projects" id="proyectos">
+            <h2 id="proyectos">Proyectos</h2>
             <!--Tarjeta cronologías-->
             <div class="principal-cards">
                 <div class="project-card">
                     <img src="../Portafolio-stephanie-vm.github.io/img/cronologias.png" alt="">
                     <h3>Cronologías de lo invisible</h3>
-                    <p>Este proyecto fue construido con nextJs, Chakra UI, DatoCMS, 
-                        se utilizó cloudinary para el manejo de contenido multimedia ya que el
-                        reto más grande fue a nivel de manejo y flujo del contenido</p>
-                    <a href="#" target="_blank">Ir al sitio</a>
+                    <p>Este proyecto fue construido con <b>nextJs, Chakra UI, DatoCMS y cloudinary</b>
+                        se utilizó cloudinary para el manejo de imágenes
+                        su prioiridad fue el manejo de ontenido.</p>
+                    <a href="https://xn--cronologasdeloinvisible-8ec.com/" target="_blank">Ir al sitio</a>
                 </div>
                 <!--Tarjeta Music player-->
                 <div class="project-card">
                     <img src="../Portafolio-stephanie-vm.github.io/img/just-symphony.png" alt="">
                     <h3>Just Symphony</h3>
-                    <p>Este proyecto fue construido con nextJs, Chakra UI, DatoCMS, 
-                        se utilizó cloudinary para el manejo de contenido multimedia ya que el
-                        reto más grande fue a nivel de manejo y flujo del contenido</p>
+                    <p>Este proyecto fue construido con <b>html, css y js</b> en la parte del
+                        frontend, en el backend se utilizó mongo DB; fue una gran experiencia y sin duda
+                        un gran aprendizaje, su temática fueron los tonos pasteles y muchas ondas
+                    </p>
                     <a href="https://stephanie-vm.github.io/Proyecto-final-IV-cuatri/" target="_blank">Ir al sitio</a>
                 </div>
                 <!--Tarjeta Bulu-->            
                 <div class="project-card">
                     <img src="../Portafolio-stephanie-vm.github.io/img/bulu.png" alt="">
                     <h3>Búlu</h3>
-                    <p>Este proyecto fue construido con nextJs, Chakra UI, DatoCMS, 
-                        se utilizó cloudinary para el manejo de contenido multimedia ya que el
-                        reto más grande fue a nivel de manejo y flujo del contenido</p>
+                    <p>Búlu es un eccomerce de productos realizados a base de miel, 
+                        fue construido con <b>html, sass, Js</b> el trabajo
+                        en equipo y la buena comunicación permitió realizar el proyecto lo mejor posible</p>
                     <a href="https://vieyraurena.github.io/ecommerce-Bulu/" target="_blank">Ir al sitio</a>
                 </div>
             </div>
         </div>
     <!--Acá empieza mi info de contacto-->
-        <div class="contact">
+        <div class="contact" id="contacto">
             <div class="contact__img">.
                 <img src="../Portafolio-stephanie-vm.github.io/img/chica-contacto.svg" alt="">
             </div>
             <div class="contact-info">
                 <ul class="contact__list">
-                    <h2>Contacto</h2>
+                    <h2 id="contacto">Contacto</h2>
                     <li>
                         <img src="../Portafolio-stephanie-vm.github.io/img/icono-mail.svg">
-                        <a href="malito:Stephaniecetav@gmail.com">Stephaniecetav@gmail.com</a>
+                        <p>Stephaniecetav@gmail.com</p>
                     </li>
                     <li>
                         <img src="../Portafolio-stephanie-vm.github.io/img/icono-ubicacion.svg"> <p>San José, Costa Rica</p>
@@ -124,5 +135,6 @@
             </a>
         </div>
     </div> 
+    <script src="js/script.js"></script>
 </body>
 </html>

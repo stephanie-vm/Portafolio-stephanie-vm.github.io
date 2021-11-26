@@ -5,3 +5,13 @@
     justify-content: space-between;
     padding: 1.7rem;
 }
+.copyright p {
+    margin: 20px 0 0 50px;
+    color: $baseColor;
+    @media (min-width:40rem){
+        font-size: 1.5rem;
+    }
+}
+.github {
+    margin: 20px 100px 0 0;
+}

@@ -332,13 +332,89 @@ p {
 
 /*-HEADER-*/
 .welcome {
-  margin: 0 0 5rem 0; }
+  margin: 0 0 5rem 0;
+  background-color: #CE8B85; }
 
 .header {
+  padding: 1.7rem; }
+  .header img {
+    margin: 20px 0 0 50px; }
+
+header {
+  padding: 1.7rem;
+  width: 100%;
+  height: 10vh;
+  padding: 0; }
+
+nav {
   background-color: #CE8B85;
+  height: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1.7rem; }
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  position: fixed; }
+
+.bar-btn {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  margin-right: 2rem;
+  cursor: pointer; }
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 100px;
+  background: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  transition: all .5s; }
+
+.nav-menu li {
+  display: none;
+  line-height: 3rem;
+  margin: 50px 0;
+  transition: all .5s;
+  list-style: none; }
+
+.nav-menu li a {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none; }
+
+.nav-menu li a.active, .nav-menu li a:hover {
+  color: #d73d6c;
+  transition: .3s; }
+
+#check {
+  display: none; }
+
+#check:checked ~ .nav-menu {
+  height: 100vh; }
+
+#check:checked ~ .nav-menu li {
+  display: block; }
+
+@media (min-width: 60rem) {
+  nav {
+    height: 100px; }
+  .bar-btn {
+    display: none; }
+  .nav-menu {
+    position: relative;
+    height: 100px;
+    margin-right: 5rem;
+    top: 0;
+    background: none;
+    text-align: right; }
+    .nav-menu li {
+      display: inline-block;
+      line-height: 100px;
+      margin: 0 2rem;
+      transition: none; } }
 
 .welcome__banner {
   width: 90%;
@@ -347,7 +423,11 @@ p {
   .welcome__banner img {
     width: 100%; }
   .welcome__banner h1 {
-    text-align: center; }
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+    font-weight: 300;
+    font-size: 3rem;
+    margin-top: 4rem; }
   @media (min-width: 40rem) {
     .welcome__banner {
       width: 50%;
@@ -358,18 +438,20 @@ p {
       gap: 8rem; } }
   @media (min-width: 60rem) {
     .welcome__banner h1 {
-      font-size: 8rem;
-      font-family: 'Parisienne', cursive;
-      font-weight: 300; } }
+      font-size: 8rem; } }
 
 /*-MAIN CONTENT-*/
 .projects {
   background-color: #CE8B85;
   padding: 2rem 0;
-  margin: 5rem 0; }
+  margin: 5rem 0 7.5rem 0; }
+  @media (min-width: 60rem) {
+    .projects h2 {
+      font-size: 3rem; } }
 
 .principal-cards {
   align-items: center;
+  padding-bottom: 7.5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -385,6 +467,8 @@ p {
   .project-card h3, .project-card p, .project-card a {
     padding: 0.5rem 1rem;
     margin: 0; }
+  .project-card p {
+    line-height: 1.7rem; }
   .project-card a {
     font-size: 1rem;
     color: #FFFFFF;
@@ -394,17 +478,31 @@ p {
     letter-spacing: 0.1rem; }
   @media (min-width: 40rem) {
     .project-card {
-      width: 40%; } }
+      width: 40%; }
+      .project-card h3 {
+        font-size: 1.7rem; }
+      .project-card p {
+        font-size: 1.5rem;
+        line-height: 2rem; }
+      .project-card a {
+        font-size: 1.5rem; } }
   @media (min-width: 60rem) {
     .project-card {
       width: 20%; } }
 
 .personal {
   background-color: #E2CAAE; }
+  .personal h2 {
+    padding-top: 46px; }
+  @media (min-width: 60rem) {
+    .personal h2 {
+      font-size: 3rem; } }
+
+.mente {
+  color: #d73d6c; }
 
 .personal-info {
-  margin: 5rem 0;
-  padding: 2rem 0; }
+  padding-bottom: 2.875rem; }
   @media (min-width: 60rem) {
     .personal-info {
       display: flex;
@@ -415,7 +513,6 @@ p {
 .personal-image {
   width: 90%;
   margin: 0 auto;
-  padding-left: 11rem;
   text-align: center; }
   .personal-image img {
     width: 100%; }
@@ -427,36 +524,45 @@ p {
         width: 80%; } }
   @media (min-width: 60rem) {
     .personal-image {
-      width: 30%; } }
+      width: 30%;
+      padding-left: 11rem; } }
 
 .personal-bio {
   width: 90%;
-  margin: 0 auto;
-  padding-right: 8rem; }
+  margin: 0 auto; }
   .personal-bio p {
-    padding: 1rem;
     line-height: 1.7rem; }
     @media (min-width: 40rem) {
       .personal-bio p {
         font-size: 1.5rem;
-        line-height: 2rem; } }
+        line-height: 3rem; } }
   @media (min-width: 40rem) {
     .personal-bio {
-      width: 50%; } }
+      width: 50%;
+      padding-right: 8rem; } }
 
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2rem; }
+  gap: 2rem;
+  margin: 3.75rem; }
   @media (min-width: 40rem) {
     .contact {
-      flex-direction: row; } }
+      flex-direction: row;
+      margin-left: 3.75rem; }
+      .contact h2 {
+        font-size: 3rem; } }
+  .contact ul {
+    list-style: none; }
+    .contact ul li {
+      display: flex; }
 
 .contact__img {
   width: 90%;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 4.875rem; }
   .contact__img img {
     width: 100%; }
     @media (min-width: 40rem) {
@@ -467,12 +573,20 @@ p {
       width: 50%; } }
 
 .contact-info {
-  width: 90%; }
+  width: 90%;
+  background-color: #E2CAAE;
+  margin: 0 auto;
+  margin-bottom: 3.75rem; }
+  .contact-info h2 {
+    text-align: left; }
+  .contact-info li img {
+    margin-right: 0.438rem; }
   @media (min-width: 40rem) {
     .contact-info {
-      width: 50%; }
-      .contact-info h2 {
-        text-align: left; } }
+      width: 80%;
+      height: 24rem; }
+      .contact-info li p {
+        font-size: 1.5rem; } }
 
 /*-FOOTER-*/
 .footer {
@@ -481,3 +595,13 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 1.7rem; }
+
+.copyright p {
+  margin: 20px 0 0 50px;
+  color: #FFFFFF; }
+  @media (min-width: 40rem) {
+    .copyright p {
+      font-size: 1.5rem; } }
+
+.github {
+  margin: 20px 100px 0 0; }
