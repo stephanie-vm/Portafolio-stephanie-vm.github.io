@@ -356,17 +356,46 @@ nav {
   font-family: 'Roboto', sans-serif;
   position: fixed; }
 
-.bar-btn {
-  font-size: 2.5rem;
-  color: #FFFFFF;
-  margin-right: 2rem;
-  cursor: pointer; }
+.lbl-menu {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  transform: scale(1.2);
+  margin-right: 1.7rem; }
+
+.lbl-menu #spn1, #spn2, #spn3 {
+  position: absolute;
+  content: '';
+  background: #ffff;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  transition: all 400ms ease; }
+
+#spn2 {
+  top: 12px; }
+
+#spn3 {
+  top: 23px; }
+
+#check:checked ~ .lbl-menu #spn1 {
+  transform: rotate(140deg);
+  top: 10px; }
+
+#check:checked ~ .lbl-menu #spn2 {
+  opacity: 0; }
+
+#check:checked ~ .lbl-menu #spn3 {
+  transform: rotate(-140deg);
+  top: 10px; }
 
 .nav-menu {
+  padding: 0;
   position: fixed;
   width: 100%;
   height: 0vh;
-  top: 100px;
+  top: 84px;
   background: rgba(0, 0, 0, 0.95);
   text-align: center;
   transition: all .5s; }
@@ -414,7 +443,9 @@ nav {
       display: inline-block;
       line-height: 100px;
       margin: 0 2rem;
-      transition: none; } }
+      transition: none; }
+  .lbl-menu {
+    display: none; } }
 
 .welcome__banner {
   width: 90%;
@@ -573,7 +604,7 @@ nav {
       width: 50%; } }
 
 .contact-info {
-  width: 90%;
+  width: 120%;
   background-color: #E2CAAE;
   margin: 0 auto;
   margin-bottom: 3.75rem; }
@@ -583,7 +614,7 @@ nav {
     margin-right: 0.438rem; }
   @media (min-width: 40rem) {
     .contact-info {
-      width: 80%;
+      width: 70%;
       height: 24rem; }
       .contact-info li p {
         font-size: 1.5rem; } }
@@ -593,8 +624,10 @@ nav {
   background-color: #CE8B85;
   margin: 0;
   display: flex;
-  justify-content: space-between;
-  padding: 1.7rem; }
+  justify-content: space-between; }
+  @media (min-width: 40rem) {
+    .footer {
+      padding: 1.7rem; } }
 
 .copyright p {
   margin: 20px 0 0 50px;
